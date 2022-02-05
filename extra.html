@@ -6,14 +6,62 @@
     <meta name="viewport" content="width=device-width">
     <title>EWC Unit 1 Week 1 | Extra</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+  </head> 
 
   <body>
-    <script src="script.js"></script>
+    
+    <!-- <script src="script.js"></script>-->
 
     <a href = "index.html">Home</a> | 
     <a href = "#">Extra</a> | 
     <a href = "https://www.youtube.com">Youtube</a>
+
+    <br>
+
+    <script>
+      var i = 0;
+      var images = [];
+      var time = 3000;
+
+      images[0] = 'puppy1.jpg';
+      images[1] = 'puppy2.jpeg';
+      images[2] = 'puppy3.jpeg';
+      images[3] = 'puppy4.jpg';
+
+      function changeImg () 
+      {
+        document.sofia.src = images[i];
+
+        if (i < images.length - 1)
+        {
+          i++;
+        }
+        else 
+        {
+          i = 0;
+        }
+        setTimeout("changeImg()", time);
+      }
+      window.onload = changeImg;
+
+    </script>
+
+    <img name = "sofia" width="400" height="200"/> 
+
+<!--
+    <div class = "slider">
+      <div class = "slider__container">
+        <img src = "blueflower.jpg"> 
+        <img src = "blueflower.jpg">
+        <img src = "blueflower.jpg">
+        <img src = "blueflower.jpg">
+        <img src = "blueflower.jpg">
+      </div>
+      <div class = "slider__controllers">
+        <button class = "previous">Previous</button>
+        <button class = "next">Next</button>
+      </div>
+    </div> -->
   </body>
 
 </html>
